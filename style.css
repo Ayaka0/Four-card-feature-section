@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+}
+
+/* start title*/
+
+section {
+    margin: auto;
+    text-align: center;
+}
+ h2 {
+     line-height: 0.5em;
+    
+ }
+
+.title-txt {
+    font-weight: lighter;
+    opacity: 0.7;
+    
+}
+
+.title-txt2 {
+    opacity: 0.7;
+}
+
+.subtxt1 {
+    font-size: 13px;
+    color: hsl(229, 6%, 66%);
+}
+
+.subtxt2 {
+    font-size: 13px;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 30px;
+}
+
+p {
+    font-style: 15px;
+}
+
+/* end title */
+
+/* start 4 cards */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+div {
+    text-align: left;
+    padding-left: 30px;
+}
+
+div > p {
+    font-size: 12px;
+    opacity: 0.7;
+    line-height: 2.0em;
+    color: hsl(229, 6%, 66%);
+}
+
+div > img {
+    float: right;
+    margin-right: 30px;
+    transform: translateY(30px);
+}
+
+.cyan {
+    border-top: 4px solid;
+    border-top-color: hsl(180, 62%, 55%);
+    grid-column: 1;
+    width:350px;
+    height: 250px;
+    background-color: #fff;
+    margin-left: 165px;
+    transform: translateY(140px);
+    border-radius: 5px;
+    margin-right: 30px;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
+}
+
+.red {
+    border-top: 4px solid;
+    border-top-color: hsl(0, 78%, 62%);
+    grid-column: 2;
+    width:350px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
+}
+
+.orange {
+    border-top: 4px solid;
+    border-top-color: hsl(34, 97%, 64%);
+    grid-column: 2;
+    grid-row: 2;
+    width:350px;
+    height: 250px;
+    background-color: #fff;
+    margin-top:30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
+}
+
+.blue {
+    border-top: 4px solid;
+    border-top-color: hsl(212, 86%, 64%);
+    grid-column: 3;
+    width:350px;
+    height: 250px;
+    background-color: #fff;
+    margin-right: 165px;
+    transform: translateY(140px);
+    border-radius: 3px;
+    margin-left: 30px;
+    padding-top: 25px;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.1);
+}
+/* end 4cards */
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:600px) {
+     .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(0);
+     }
+
+     .cyan {
+         transform: translateY(0);
+         margin-bottom: 30px;
+         margin-left: 30px;
+     }
+
+     .blue {
+         transform: translateY(0);
+         margin-right: 30px;
+         margin-top: 30px;
+     }
+    
+}
